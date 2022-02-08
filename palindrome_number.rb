@@ -11,12 +11,19 @@
 # // Output: true
 # // Explanation: 121 reads as 121 from left to right and from right to left.
 
+# def is_palindrome(x)
+#     result = false
+#     string = (x.to_s).split("").reverse().join()
+#     reverse_number = string.to_i
+#     reverse_number == x ? result = true : result
+#     return result
+# end
+
 def is_palindrome(x)
-    result = false
-    string = (x.to_s).split("").reverse().join()
-    reverse_number = string.to_i
-    reverse_number == x ? result = true : result
-    return result
+ result = false
+  x.to_s === x.to_s.reverse() ? result = true : result
+  return result
+
 end
 
 is_palindrome(122)
