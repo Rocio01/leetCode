@@ -12,7 +12,7 @@ def delete_duplicates(head)
   currNode = head
 
   while currNode && currNode.next
-    if currNode.value == currNode.next.value
+    if currNode.val == currNode.next.val
       currNode.next = currNode.next.next
     else
       currNode =  currNode.next
